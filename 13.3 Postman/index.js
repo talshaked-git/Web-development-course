@@ -14,19 +14,19 @@ app.get("/", (req, res) => {
 });
 
 app.post("/register", (req, res) => {
-  //Do something with the data
+  console.log(req);
   res.sendStatus(201);
 });
 
-app.put("/user/angela", (req, res) => {
+app.put("/user/tal", (req, res) => {
   res.sendStatus(200);
 });
 
-app.patch("/user/angela", (req, res) => {
+app.patch("/user/tal", (req, res) => {
   res.sendStatus(200);
 });
 
-app.delete("/user/angela", (req, res) => {
+app.delete("/user/tal", (req, res) => {
   //Deleting
   res.sendStatus(200);
 });
