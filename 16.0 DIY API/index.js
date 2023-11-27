@@ -81,7 +81,7 @@ app.delete("/all", (req, res) => {
   const userKey = req.query.key;
   if (userKey === masterKey) {
     jokes = [];
-    res.send("jokes deleted");
+    res.send("all jokes deleted");
   } else {
     res.send("You do not have permission to delete all jokes");
   }
