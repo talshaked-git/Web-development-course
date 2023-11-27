@@ -39,7 +39,7 @@ app.post("/jokes", (req, res) => {
   res.send(newJoke);
 });
 
-//5. PUT a joke
+//5. PUT a joke text and type and update the joke
 app.put("/jokes/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const updatedJoke = {
