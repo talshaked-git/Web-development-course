@@ -1,0 +1,16 @@
+{
+  "name": "qrproject",
+  "version": "1.0.0",
+  "description": "qr code project - learning npm",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tal Shaked",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^9.2.12",
+    "qr-image": "^3.2.0"
+  }
+}
