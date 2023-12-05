@@ -40,7 +40,7 @@ SELECT *
 FROM student
 JOIN homework_submission
 ON student.id = student_id
-
+ -- 
 SELECT student.id, first_name, last_name, mark
 FROM student
 JOIN homework_submission
