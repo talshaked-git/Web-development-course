@@ -4,6 +4,9 @@ import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
 import bcrypt from "bcrypt";
+import localPassport from "passport-local";
+import passport from "passport";
+import session from "express-session";
 
 const app = express();
 
@@ -38,9 +41,7 @@ app.get("/register", async function(req, res){
 
 app.post("/register", async function(req, res){
   const username = req.body.username;
-    console.log(username);
-    const password = req.body.password;
-    console.log(password);
+  const password = req.body.password;
 
   try {
     const hashedPassword = await bcrypt.hash(password, saltRounds);
