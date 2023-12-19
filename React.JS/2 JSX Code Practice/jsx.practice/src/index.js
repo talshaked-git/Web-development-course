@@ -4,10 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import App2 from './App2';
+import App3 from './App3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(<App />);// lessons 2-9
-root.render(<App2 />);// lessons 10-11
+// root.render(<App2 />);// lessons 10-11
+//lesson 12-13 project in folder 13 Keeper App Part 1 Challenge
+root.render(<App3 />);// lessons 14-15
+
 
 
 // If you want to start measuring performance in your app, pass a function
