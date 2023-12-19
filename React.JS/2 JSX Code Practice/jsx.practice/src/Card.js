@@ -1,15 +1,18 @@
 import "./App.css";
+import Avatar from "./Avatar";
+import Detail from "./Detail";
 
 function Card(props) {
     return(  
               <div className="card">
                 <div className="top">
+                  <p>{props.id}</p>
                   <h2 className="name">{props.name}</h2>
-                  <img className="circle-img" src={props.imgURL} alt="avatar_img"></img>
+                  <Avatar imgURL={props.imgURL} />
                 </div>
                 <div className="bottom">
-                  <p className="info">{props.phone}</p>
-                  <p className="info">{props.email}</p>
+                  <Detail detailInfo={props.phone} />
+                  <Detail detailInfo={props.email} />
                 </div>
               </div>
     );
