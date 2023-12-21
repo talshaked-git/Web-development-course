@@ -7,6 +7,11 @@ import App2 from './App2';
 import App3 from './App3';
 import App4 from './App4';
 import App5 from './App5';
+import App6 from './App6';
+import App7 from './App7';
+import App8 from './App8';
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 //root.render(<App />);// lessons 2-9
@@ -14,7 +19,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //lesson 12-13 project in folder 13 Keeper App Part 1 Challenge
 // root.render(<App3 />);// lessons 14-17
 // root.render(<App4 />);// lesson 18
-root.render(<App5 />);// lesson 19-20
+// root.render(<App5 />);// lessons 19-20
+//lesson 21 project in folder 13 Keeper App Part 1 Challenge
+// root.render(<App6 />);// lessons 22-23
+// root.render(<App7 />); //lessons 24-25
+root.render(<App8 />);// lessons 26
+
 
 
 // If you want to start measuring performance in your app, pass a function
