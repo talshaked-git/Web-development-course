@@ -10,6 +10,8 @@ import App5 from './App5';
 import App6 from './App6';
 import App7 from './App7';
 import App8 from './App8';
+import App9 from './App9';
+import App10 from './App10';
 
 
 
@@ -23,7 +25,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //lesson 21 project in folder 13 Keeper App Part 1 Challenge
 // root.render(<App6 />);// lessons 22-23
 // root.render(<App7 />); //lessons 24-25
-root.render(<App8 />);// lessons 26
+// root.render(<App8 />);// lessons 26
+// root.render(<App9 />);// lessons 27
+root.render(<App10 />);// lessons 28-29
 
 
 
