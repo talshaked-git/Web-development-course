@@ -1,10 +1,10 @@
 import './App.css';
 
-var getYear = new Date().getFullYear();
 function Footer() {
+  const getYear = new Date().getFullYear();
     return (
       <div className="footer p">
-        <footer> <p>Created by Tal {getYear}</p> </footer>
+        <footer> <p>© Created by Tal {getYear}</p> </footer>
     </div>
   );
 }

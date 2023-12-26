@@ -1,5 +1,6 @@
 import {useState} from "react";
 import "./App.css";
+import Item from "./components/Item";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -17,6 +18,14 @@ function App() {
     setInputText("");
   }
 
+  function deleteItem(id) {
+    setItems((prevItems) => {
+      return prevItems.filter((item, index) => {
+        return index !== id;
+      });
+    });
+  }
+
   return (
     <div className="container">
       <div className="heading">
@@ -31,9 +40,7 @@ function App() {
       <div>
         <ul>
           <ul>
-            {items.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
+            {items.map((item, index) => ( <Item key={index} id={index} text={item} onChecked={deleteItem}/> ))}
           </ul>
         </ul>
       </div>
@@ -42,11 +49,3 @@ function App() {
 }
 
 export default App;
-
-
-
-//CHALLENGE: Make this app work by applying what you've learnt.
-//1. When new text is written into the input, its state should be saved.
-//2. When the add button is pressed, the current data in the input should be
-//added to an array.
-//3. The <ul> should display all the array items as <li>s
