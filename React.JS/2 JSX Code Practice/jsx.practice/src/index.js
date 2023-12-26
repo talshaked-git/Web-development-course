@@ -13,6 +13,7 @@ import App8 from './App8';
 import App9 from './App9';
 import App10 from './App10';
 import App11 from './App11';
+import App12 from './App12';
 
 
 
@@ -29,7 +30,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(<App8 />);// lessons 26
 // root.render(<App9 />);// lessons 27
 // root.render(<App10 />);// lessons 28-31
-root.render(<App11 />);// lessons 32-33
+// root.render(<App11 />);// lessons 32-34
+
 
 
 
